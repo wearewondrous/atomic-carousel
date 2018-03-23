@@ -1,0 +1,11 @@
+{
+  "name": "atomic-slider",
+  "version": "0.0.1-dev",
+  "main": "index.js",
+  "repository": "git@github.com:WondrousLLC/atomic-slider.git",
+  "author": "Anton Staroverov (anton@wondrous.ch)",
+  "license": "MIT",
+  "dependencies": {
+    "owl.carousel": "^2.3.2"
+  }
+}
