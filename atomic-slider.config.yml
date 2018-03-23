@@ -1,0 +1,12 @@
+title: Atomic Slider
+status: 'wip'
+preview: '@preview'
+context:
+  slider:
+    items:
+      - content: '<img src="https://placehold.it/1000x500"/>'
+      - content: '<img src="https://placehold.it/1000x500"/>'
+      - content: '<img src="https://placehold.it/1000x500"/>'
+      - content: '<img src="https://placehold.it/1000x500"/>'
+      - content: '<img src="https://placehold.it/1000x500"/>'
+      - content: '<img src="https://placehold.it/1000x500"/>'
