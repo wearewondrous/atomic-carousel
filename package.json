@@ -6,6 +6,6 @@
   "author": "Anton Staroverov (anton@wondrous.ch)",
   "license": "MIT",
   "peerDependencies": {
-    "owl.carousel": "^2.3.2"
+    "owl.carousel": "^2.2.0"
   }
 }
