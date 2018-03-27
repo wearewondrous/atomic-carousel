@@ -10,5 +10,3 @@ context:
       - '<img src="https://placehold.it/1000x500"/>'
       - '<img src="https://placehold.it/1000x500"/>'
       - '<img src="https://placehold.it/1000x500"/>'
-    options:
-      items: 1

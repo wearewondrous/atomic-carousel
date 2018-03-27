@@ -1,4 +1,4 @@
-<div data-slider='{{ slider.options ? slider.options|json_encode() : "" }}'>
+<div class="{{ slider.modifiers }}" data-slider='{{ slider.options ? slider.options|json_encode() : "" }}'>
   {% for item in slider.items %}
   <div>
     {{ item }}
