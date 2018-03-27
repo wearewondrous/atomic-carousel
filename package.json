@@ -5,7 +5,7 @@
   "repository": "git@github.com:WondrousLLC/atomic-slider.git",
   "author": "Anton Staroverov (anton@wondrous.ch)",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "owl.carousel": "^2.3.2"
   }
 }
