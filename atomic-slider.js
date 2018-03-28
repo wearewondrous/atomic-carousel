@@ -8,7 +8,7 @@ function initSlider($, context) {
           nav: true,
           navText: ['‹', '›']
         },
-        options = Object.assign({}, defaults, $this.data('slider'));
+        options = $.extend(defaults, $this.data('slider'));
     $this.addClass('owl-carousel owl-theme').owlCarousel(options);
   });
 }
