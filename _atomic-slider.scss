@@ -1,2 +1,28 @@
 @import "owl.carousel/src/scss/owl.carousel";
-@import "owl.carousel/src/scss/owl.theme.default";
+
+.owl-carousel.has-dots-progress {
+  position: relative;
+
+  .owl-nav {
+    position: absolute;
+    top: $nav-margin;
+    right: $nav-margin;
+    margin-top: 0;
+  }
+
+  .owl-dots {
+    display: flex;
+
+    .owl-dot {
+      display: block;
+      flex-basis: 0;
+      flex-grow: 1;
+
+      span {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+      }
+    }
+  }
+}

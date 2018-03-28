@@ -1,0 +1,19 @@
+@import "owl.carousel/src/scss/owl.theme.default";
+
+@import "owl.carousel/src/scss/owl.carousel";
+
+.owl-carousel.has-dots-progress {
+  .owl-dots {
+    .owl-dot {
+      span {
+        background: $dot-background-active;
+      }
+    }
+
+    .owl-dot.active ~ .owl-dot {
+      span {
+        background: $dot-background;
+      }
+    }
+  }
+}

@@ -10,3 +10,9 @@ context:
       - '<img src="https://placehold.it/1000x500"/>'
       - '<img src="https://placehold.it/1000x500"/>'
       - '<img src="https://placehold.it/1000x500"/>'
+variants:
+  - name: 'Progress'
+    context:
+      slider:
+        modifiers:
+          - 'has-dots-progress'
