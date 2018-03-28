@@ -14,5 +14,8 @@ variants:
   - name: 'Progress'
     context:
       slider:
+        options:
+          autoplay: true,
+          rewind: true
         modifiers:
           - 'has-dots-progress'
