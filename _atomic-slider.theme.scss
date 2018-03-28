@@ -14,5 +14,11 @@
         background: $dot-background-active;
       }
     }
+
+    .owl-dot.active:last-child {
+      &::after {
+        background: $dot-background-active;
+      }
+    }
   }
 }
