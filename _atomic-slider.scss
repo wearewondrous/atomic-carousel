@@ -1,5 +1,7 @@
 @import "owl.carousel/src/scss/owl.carousel";
 
+$nav-margin: rem(5px) !default;
+
 @keyframes slider-dot-progress {
   from {
     width: 0;
@@ -62,7 +64,7 @@
 
       &::after {
         display: block;
-        content: " ";
+        content: "";
         width: 100%;
         height: 100%;
         opacity: 0.5;
