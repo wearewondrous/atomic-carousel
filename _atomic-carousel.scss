@@ -1,24 +1,6 @@
 @import "owl.carousel/src/scss/owl.carousel";
 
-$dot-width:               10px !default;
-$dot-height:              10px !default;
-$dot-margin:              5px 7px !default;
-$dot-background:          #D6D6D6 !default;
-$dot-background-active:   #869791 !default;
-
-.owl-carousel {
-  .owl-dots {
-    .owl-dot {
-      span {
-        width: $dot-width;
-        height: $dot-height;
-        margin: $dot-margin;
-        background: $dot-background;
-        display: block;
-      }
-    }
-  }
-}
+$nav-margin: rem(5px) !default;
 
 .owl-carousel.has-dots-progress {
   .owl-dots {
@@ -33,26 +15,12 @@ $dot-background-active:   #869791 !default;
         width: 100%;
         margin: 0;
         border-radius: 0;
-        background: $dot-background-active;
       }
     }
 
     .owl-dot.active ~ .owl-dot {
       span {
         width: 0;
-        background: transparent;
-      }
-    }
-
-    .owl-dot.active + .owl-dot {
-      span {
-        background: $dot-background-active;
-      }
-    }
-
-    .owl-dot.active:last-child {
-      &::after {
-        background: $dot-background-active;
       }
     }
   }
