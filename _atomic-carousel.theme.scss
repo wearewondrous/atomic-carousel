@@ -1,5 +1,99 @@
-@import "owl.carousel/src/scss/owl.theme.default";
+//> https://raw.githubusercontent.com/OwlCarousel2/OwlCarousel2/2.3.3/src/scss/_theme.default.scss
+$carousel-color-base:      #869791 !default;
+$carousel-color-white:      #FFF !default;
+$carousel-color-gray:      #D6D6D6 !default;
 
+//nav
+
+$carousel-nav-color:       $carousel-color-white !default;
+$carousel-nav-color-hover:    $carousel-color-white !default;
+$carousel-nav-font-size:     14px !default;
+$carousel-nav-rounded:       3px !default;
+$carousel-nav-margin:       5px !default;
+$carousel-nav-padding:       4px 7px !default;
+$carousel-nav-background:     $carousel-color-gray !default;
+$carousel-nav-background-hover:  $carousel-color-base !default;
+$carousel-nav-disabled-opacity:   0.5 !default;
+
+//dots
+
+$carousel-dot-width:        10px !default;
+$carousel-dot-height:      10px !default;
+$carousel-dot-rounded:      30px !default;
+$carousel-dot-margin:       5px 7px !default;
+$carousel-dot-background:    $carousel-color-gray !default;
+$carousel-dot-background-active:  $carousel-color-base !default;
+//< https://raw.githubusercontent.com/OwlCarousel2/OwlCarousel2/2.3.3/src/scss/_theme.default.scss
+
+
+//> https://raw.githubusercontent.com/OwlCarousel2/OwlCarousel2/2.3.3/src/scss/_theme.scss
+.owl-carousel {
+  // Styling Next and Prev buttons
+  .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+
+    [class*='owl-'] {
+      color: $carousel-nav-color;
+      font-size: $carousel-nav-font-size;
+      margin: $carousel-nav-margin;
+      padding: $carousel-nav-padding;
+      background: $carousel-nav-background;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 3px;
+
+      &:hover {
+        background: $carousel-nav-background-hover;
+        color:$carousel-nav-color-hover;
+        text-decoration: none;
+      }
+    }
+    .disabled {
+      opacity: $carousel-nav-disabled-opacity;
+      cursor: default;
+    }
+  }
+
+  // Styling dots
+  .owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+  }
+
+  .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+
+      span {
+        width: $carousel-dot-width;
+        height: $carousel-dot-height;
+        margin: $carousel-dot-margin;
+        background: $carousel-dot-background;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity 200ms ease;
+        border-radius: $carousel-dot-rounded;
+      }
+
+      &.active,
+      &:hover {
+        span {
+          background: $carousel-dot-background-active;
+        }
+      }
+    }
+  }
+}
+//< https://raw.githubusercontent.com/OwlCarousel2/OwlCarousel2/2.3.3/src/scss/_theme.scss
+
+
+// Progress
 .owl-carousel.has-dots-progress {
   .owl-dots {
     .owl-dot.active ~ .owl-dot {
@@ -11,13 +105,13 @@
     .owl-dot,
     .owl-dot.active + .owl-dot {
       span {
-        background: $dot-background-active;
+        background: $carousel-dot-background-active;
       }
     }
 
     .owl-dot.active:last-child {
       &::after {
-        background: $dot-background-active;
+        background: $carousel-dot-background-active;
       }
     }
   }
