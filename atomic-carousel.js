@@ -4,7 +4,8 @@ function initCarousel($, context) {
   var defaults = {
     items: 1,
     nav: true,
-    navText: ['‹', '›']
+    navText: ['‹', '›'],
+    navElement: 'span' // @TODO: Switch to 'button' once better supported.
   };
 
   $(context).find('[data-carousel]').each(function() {

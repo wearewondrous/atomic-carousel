@@ -96,23 +96,30 @@ $carousel-dot-background-active:  $carousel-color-base !default;
 // Progress
 .owl-carousel.has-dots-progress {
   .owl-dots {
+    .owl-dot {
+      span {
+        background: $carousel-dot-background-active;
+      }
+    }
+
     .owl-dot.active ~ .owl-dot {
       span {
-        background: transparent;
+        background: $carousel-dot-background;
       }
     }
+  }
+}
 
-    .owl-dot,
-    .owl-dot.active + .owl-dot {
-      span {
-        background: $carousel-dot-background-active;
-      }
+.owl-carousel.has-dots-progress.autoplayed {
+  .owl-dot.active + .owl-dot {
+    span {
+      background: $carousel-dot-background-active;
     }
+  }
 
-    .owl-dot.active:last-child {
-      &::after {
-        background: $carousel-dot-background-active;
-      }
+  .owl-dot.active:last-child {
+    &::after {
+      background: $carousel-dot-background-active;
     }
   }
 }
