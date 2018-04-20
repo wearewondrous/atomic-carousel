@@ -2,38 +2,14 @@
 
 $nav-margin: rem(5px) !default;
 
-@keyframes carousel-dot-progress {
-  from {
-    width: 0;
-    opacity: 0.5;
-  }
-  to {
-    width: 100%;
-    opacity: 1;
-  }
-}
-
 .owl-carousel.has-dots-progress {
-  position: relative;
-
-  .owl-nav {
-    position: absolute;
-    top: $nav-margin;
-    right: $nav-margin;
-    margin-top: 0;
-  }
-
   .owl-dots {
-    position: absolute;
-    bottom: 0;
     display: flex;
-    width: 100%;
 
     .owl-dot {
       display: block;
       flex-basis: 0;
       flex-grow: 1;
-      order: 2;
 
       span {
         width: 100%;
@@ -46,6 +22,25 @@ $nav-margin: rem(5px) !default;
       span {
         width: 0;
       }
+    }
+  }
+}
+
+@keyframes carousel-dot-progress {
+  from {
+    width: 0;
+    opacity: 0.5;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.owl-carousel.has-dots-progress.autoplayed {
+  .owl-dots {
+    .owl-dot {
+      order: 2;
     }
 
     .owl-dot.active + .owl-dot {
