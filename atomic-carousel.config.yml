@@ -1,8 +1,8 @@
-title: Atomic Slider
+title: Atomic Carousel
 status: 'wip'
 preview: '@preview'
 context:
-  slider:
+  carousel:
     items:
       - '<img src="https://placehold.it/1000x500"/>'
       - '<img src="https://placehold.it/1000x500"/>'
@@ -13,7 +13,7 @@ context:
 variants:
   - name: 'Progress'
     context:
-      slider:
+      carousel:
         options:
           autoplay: true,
           rewind: true

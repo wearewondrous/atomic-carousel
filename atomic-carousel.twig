@@ -1,5 +1,5 @@
-<div class="{{ slider.modifiers|join(' ') }}" data-slider='{{ slider.options ? slider.options|json_encode() : "" }}'>
-  {% for item in slider.items %}
+<div class="{{ carousel.modifiers|join(' ') }}" data-carousel='{{ carousel.options ? carousel.options|json_encode() : "" }}'>
+  {% for item in carousel.items %}
   <div>
     {{ item }}
   </div>

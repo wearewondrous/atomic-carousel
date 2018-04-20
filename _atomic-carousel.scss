@@ -2,7 +2,7 @@
 
 $nav-margin: rem(5px) !default;
 
-@keyframes slider-dot-progress {
+@keyframes carousel-dot-progress {
   from {
     width: 0;
     opacity: 0.5;
@@ -51,7 +51,7 @@ $nav-margin: rem(5px) !default;
     .owl-dot.active + .owl-dot {
       span {
         opacity: 0.5;
-        animation: slider-dot-progress 5s linear forwards;
+        animation: carousel-dot-progress 5s linear forwards;
       }
     }
 
@@ -68,7 +68,7 @@ $nav-margin: rem(5px) !default;
         width: 100%;
         height: 100%;
         opacity: 0.5;
-        animation: slider-dot-progress 5s linear forwards;
+        animation: carousel-dot-progress 5s linear forwards;
       }
     }
   }

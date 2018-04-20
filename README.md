@@ -1,2 +1,3 @@
-# atomic-slider
-Atomic Slider/Carousel
+# Atomic Carousel
+
+Generic reusable carousel component.
