@@ -5,7 +5,7 @@
   "repository": "git@github.com:WondrousLLC/atomic-carousel.git",
   "author": "Anton Staroverov (anton@wondrous.ch)",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "owl.carousel": "^2.2.0"
   }
 }
