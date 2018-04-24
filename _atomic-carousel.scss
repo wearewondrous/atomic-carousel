@@ -1,7 +1,7 @@
 @import "owl.carousel/src/scss/owl.carousel";
 
 .owl-carousel.has-dots-progress {
-  .owl-dots {
+  .owl-dots:not(.disabled) {
     display: flex;
 
     .owl-dot {
