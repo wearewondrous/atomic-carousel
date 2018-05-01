@@ -119,6 +119,7 @@ $carousel-dot-background-active:  $carousel-color-base !default;
 
   .owl-dot.active:last-child {
     &::after {
+      height: $carousel-dot-height;
       background: $carousel-dot-background-active;
     }
   }
