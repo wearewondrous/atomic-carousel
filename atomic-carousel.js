@@ -12,6 +12,6 @@ function initCarousel($, context) {
     var $this = $(this);
     var options = $.extend(defaults, $this.data('carousel'));
 
-    $this.addClass('owl-carousel owl-theme').owlCarousel(options);
+    $this.owlCarousel(options);
   });
 }

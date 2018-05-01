@@ -1,5 +1,5 @@
 {% set _modifiers = carousel.modifiers|default([])|merge([carousel.options.autoplay ? 'autoplayed' : '']) %}
-<div class="{{ _modifiers|join(' ') }}" data-carousel='{{ carousel.options ? carousel.options|json_encode() : "" }}'>
+<div class="owl-carousel {{ _modifiers|join(' ') }}" data-carousel='{{ carousel.options ? carousel.options|json_encode() : "" }}'>
   {% for item in carousel.items %}
   <div>
     {{ item }}
