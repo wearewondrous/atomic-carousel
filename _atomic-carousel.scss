@@ -1,67 +1,24 @@
 @import "owl.carousel/src/scss/owl.carousel";
 
-.owl-carousel.has-dots-progress {
-  .owl-dots:not(.disabled) {
-    display: flex;
-
-    .owl-dot {
-      display: block;
-      flex-basis: 0;
-      flex-grow: 1;
-
-      span {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-      }
-    }
+.owl-carousel.show-progress {
+  .owl-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 5px;
+    background: gray;
+    animation: carousel-progress 5s linear forwards;
   }
 }
 
-@keyframes carousel-dot-progress {
+@keyframes carousel-progress {
   from {
     width: 0;
-    opacity: 0.5;
   }
   to {
     width: 100%;
-    opacity: 1;
-  }
-}
-
-.owl-carousel.has-dots-progress.autoplayed {
-  .owl-dots {
-    .owl-dot {
-      order: 2;
-    }
-
-    .owl-dot.active ~ .owl-dot {
-      span {
-        width: 0;
-      }
-    }
-
-    .owl-dot.active + .owl-dot {
-      span {
-        opacity: 0.5;
-        animation: carousel-dot-progress 5s linear forwards;
-      }
-    }
-
-    .owl-dot.active:last-child {
-      order: 1;
-
-      span {
-        display: none;
-      }
-
-      &::after {
-        display: block;
-        content: "";
-        width: 100%;
-        opacity: 0.5;
-        animation: carousel-dot-progress 5s linear forwards;
-      }
-    }
   }
 }

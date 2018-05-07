@@ -5,17 +5,19 @@ context:
   carousel:
     items:
       - '<img src="https://placehold.it/1000x500"/>'
+      - '<img src="https://placehold.it/1000x500/000000"/>'
       - '<img src="https://placehold.it/1000x500"/>'
+      - '<img src="https://placehold.it/1000x500/000000"/>'
       - '<img src="https://placehold.it/1000x500"/>'
-      - '<img src="https://placehold.it/1000x500"/>'
-      - '<img src="https://placehold.it/1000x500"/>'
-      - '<img src="https://placehold.it/1000x500"/>'
+      - '<img src="https://placehold.it/1000x500/000000"/>'
 variants:
   - name: 'Progress'
     context:
       carousel:
         options:
-          autoplay: true,
+          autoplay: true
           rewind: true
+          animateIn: true
+          animateOut: 'fadeOut'
         modifiers:
-          - 'has-dots-progress'
+          - 'show-progress'
