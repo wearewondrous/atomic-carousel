@@ -1,5 +1,16 @@
 @import "owl.carousel/src/scss/owl.carousel";
 
+
+// Prevent jumping until js is ready:
+.owl-carousel.single {
+  display: block;
+
+  > *:not(:first-child) {
+    display: none;
+  }
+}
+
+
 .owl-carousel.show-progress {
   .owl-item.active::after {
     content: "";
