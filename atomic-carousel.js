@@ -14,4 +14,12 @@ function initCarousel($, context) {
 
     $this.owlCarousel(options);
   });
+
+  $(document).on('click', '.owl-item', function() {
+    var $this = $(this);
+    var $owl = $this.closest('.owl-carousel');
+    var owl = $owl.data('owl.carousel');
+
+    $owl.trigger('to.owl.carousel', owl.relative($this.index()));
+  });
 }
