@@ -2,7 +2,7 @@
 
 
 // Prevent jumping until js is ready:
-.owl-carousel.single {
+.owl-carousel.single:not(.owl-loaded) {
   display: block;
 
   > *:not(:first-child) {
