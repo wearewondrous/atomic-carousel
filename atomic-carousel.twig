@@ -1,8 +1,14 @@
 {% set _modifiers = carousel.modifiers|default([])|merge([carousel.options.items == 1 ? 'single' : '']) %}
 <div class="owl-carousel {{ _modifiers|join(' ') }}" data-carousel='{{ carousel.options ? carousel.options|json_encode() : "" }}'>
   {% for item in carousel.items %}
-  <div>
-    {{ item }}
-  </div>
+    {% if item.attributes %}
+      <div>
+        {{ item.content }}
+      </div>
+    {% else %}
+      <div>
+        {{ item }}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
