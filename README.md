@@ -1,3 +1,5 @@
-# Atomic Carousel
+# Deprecated
+
+Atomic Carousel
 
 Generic reusable carousel component.

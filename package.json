@@ -1,9 +1,9 @@
 {
   "name": "atomic-carousel",
-  "version": "0.0.1-dev",
+  "version": "0.0.2-dev",
   "main": "index.js",
-  "repository": "git@github.com:WondrousLLC/atomic-carousel.git",
-  "author": "Anton Staroverov (anton@wondrous.ch)",
+  "repository": "git@github.com:wearewondrous/atomic-carousel.git",
+  "author": "Wondrous (admin@wondrous.ch)",
   "license": "MIT",
   "dependencies": {
     "owl.carousel": "^2.2.0"
