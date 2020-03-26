@@ -3,9 +3,9 @@
   "version": "0.0.2-dev",
   "main": "index.js",
   "repository": "git@github.com:wearewondrous/atomic-carousel.git",
-  "author": "Wondrous (admin@wondrous.ch)",
+  "author": "Wondrous <hello@wearewondrous.com>",
   "license": "MIT",
   "dependencies": {
-    "owl.carousel": "^2.2.0"
+    "owl.carousel": "^2.3.4"
   }
 }
