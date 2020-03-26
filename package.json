@@ -1,6 +1,6 @@
 {
   "name": "atomic-carousel",
-  "version": "0.0.2-dev",
+  "version": "0.0.3",
   "main": "index.js",
   "repository": "git@github.com:wearewondrous/atomic-carousel.git",
   "author": "Wondrous <hello@wearewondrous.com>",
